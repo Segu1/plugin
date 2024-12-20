@@ -13,8 +13,13 @@ commands:
     description: "Toggle particle effect"
     usage: "/butterfly"
     permission: cowcannon.command.butterfly
+  displayentity: 
+	description: "Spawns a display entity"
+	usage: "/displayentity [message]"
+	permission: cowcannon.command.displayentity 
 permissions:
   cowcannon.command.cow:
     default: op
   cowcannon.cow.use:
     default: true
+
