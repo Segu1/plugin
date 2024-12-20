@@ -1,0 +1,20 @@
+name: CowCannon
+version: 1.0
+main: org.cowCannon.cowCannon.CowCannon
+api-version: 1.19
+commands:
+  cow:
+    description: "This command spawns a cow who can explode!"
+    usage: "/cow [set/baby] [entityType]"
+    aliases: [ cownnanon ]
+    permission: cowcannon.command.cow
+    permission-message: "&cYou do not have permission to spawn an exploding cow!"
+  butterfly:
+    description: "Toggle particle effect"
+    usage: "/butterfly"
+    permission: cowcannon.command.butterfly
+permissions:
+  cowcannon.command.cow:
+    default: op
+  cowcannon.cow.use:
+    default: true

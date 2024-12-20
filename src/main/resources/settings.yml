@@ -1,0 +1,4 @@
+Explosion:
+
+  #The entity type to explode
+  entity-type: BAT
