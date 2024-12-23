@@ -12,6 +12,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.metadata.FixedMetadataValue;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import org.bukkit.persistence.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -21,7 +22,7 @@ public class CowCommand implements CommandExecutor , TabExecutor {
 
 
     public boolean spawnEntity(@NotNull LivingEntity livingEntity) {
-        livingEntity.setMetadata("CowCannon", new FixedMetadataValue(CowCannon.getInstance(), true));
+        livingEntity.getPersistentDataContainer().set(Keys.CUSTOM_COW, PersistentDataType.BOOLEAN, true);
         livingEntity.setCustomName(ChatColor.RED + String.format("Exploding %s", livingEntity.getType().name()));
         livingEntity.setCustomNameVisible(true);
         return true;

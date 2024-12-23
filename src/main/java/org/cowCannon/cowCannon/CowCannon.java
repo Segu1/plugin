@@ -32,8 +32,7 @@ public final class CowCannon extends JavaPlugin {
 		}
 
 		getCommand("butterfly").setExecutor(new ButterflyCommand());
-		getCommand("displayentity").setExecutor(new DisplayEntityCommand());
-		// cargar el archivo de configuracion:
+		getCommand("customItem").setExecutor(new CustomItem());		// cargar el archivo de configuracion:
 		CowSettings.getInstance().load();
 		task = getServer().getScheduler().runTaskTimer(this, ButterflyTask.getInstance(), 0, 1);
 	}
