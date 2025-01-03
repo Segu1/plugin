@@ -1,11 +1,12 @@
-package org.cowCannon.cowCannon;
+package org.cowCannon.cowCannon.Main;
+
+import java.io.File;
+import java.io.IOException;
 
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.EntityType;
-
-import java.io.File;
-import java.io.IOException;
+import org.cowCannon.cowCannon.CowCannon;
 
 public class CowSettings {
 

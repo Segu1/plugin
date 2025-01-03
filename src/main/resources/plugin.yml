@@ -2,7 +2,7 @@ name: CowCannon
 version: 1.0
 main: org.cowCannon.cowCannon.CowCannon
 api-version: 1.19
-depend: [ProtocolLib]
+softdepened: [ ProtocolLib, PlaceholderAPI, Vault ]
 commands:
   cow:
     description: "This command spawns a cow who can explode!"
@@ -14,15 +14,24 @@ commands:
     description: "Toggle particle effect"
     usage: "/butterfly"
     permission: cowcannon.command.butterfly
-	permission-message:  "&cYou dont have permission to enable butterfly"
-  customItem: 
-	description: "Create custom items effects"
-	usage: "/customitem"
-	aliases: [cm]
-	permission: cowcannon.command.customitem
-	permission-message: "&cYou dont have permission to do that"
+    permission-message: "&cYou do not have permission to enable butterfly"
+  customItem:
+    description: "Create custom items effects"
+    usage: "/customitem [itemType]"
+    aliases: [cm]
+    permission: cowcannon.command.customitem
+    permission-message: "&cYou do not have permission to do that"
+  gui:
+    description: "Opens a gui"
+    usage: "/gui"
+    aliases: [guis]
+    permission: cowcannnon.command.gui
+    permission-message: "&CSorry, you cant open that!"
+
 permissions:
   cowcannon.command.cow:
     default: op
+  cowcannon.command.gui:
+    default: op
   cowcannon.cow.use:
-    default: true
+    default: op

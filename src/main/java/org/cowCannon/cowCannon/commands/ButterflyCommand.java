@@ -1,9 +1,10 @@
-package org.cowCannon.cowCannon;
+package org.cowCannon.cowCannon.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.cowCannon.cowCannon.Tasks.ButterflyTask;
 import org.jetbrains.annotations.NotNull;
 
 public class ButterflyCommand implements CommandExecutor {

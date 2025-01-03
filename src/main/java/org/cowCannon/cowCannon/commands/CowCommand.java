@@ -1,4 +1,4 @@
-package org.cowCannon.cowCannon;
+package org.cowCannon.cowCannon.commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -9,10 +9,11 @@ import org.bukkit.entity.Ageable;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
-import org.bukkit.metadata.FixedMetadataValue;
+import org.bukkit.persistence.PersistentDataType;
+import org.cowCannon.cowCannon.Main.Keys;
+import org.cowCannon.cowCannon.Main.CowSettings;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.bukkit.persistence.*;
 
 import java.util.Arrays;
 import java.util.List;
